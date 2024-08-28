@@ -75,9 +75,11 @@ export const AboutSection = () => {
                 masterpieces."
               className=""
             />
-            <ToolBoxItems items={toolboxItems}/>
             <ToolBoxItems items={toolboxItems}
-            itemsWrapperClassName="-translate-x-1/2"/>
+            itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+            />
+            <ToolBoxItems items={toolboxItems}
+            itemsWrapperClassName="animate-move-right [animation-duration:20s]"/>
           </Card>
         </div>
       </div>
