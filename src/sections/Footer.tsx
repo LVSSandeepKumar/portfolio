@@ -1,4 +1,5 @@
 import ArrowUpRigthIcon from "@/assets/icons/arrow-up-right.svg";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -8,10 +9,10 @@ export const Footer = () => {
         <div className="border-t border-white/15 text-sm py-6 flex items-center justify-between">
           <div className="text-white/40">&copy; 2024.</div>
           <div>
-            <a href="#" className="inline-flex items-center gap-1.5">
+            <Link href="https://www.linkedin.com/in/lvs-sandeep-kumar-373856263/" className="inline-flex items-center gap-1.5">
               <span className="font-semibold">LinkedIn</span>
               <ArrowUpRigthIcon className="size-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
