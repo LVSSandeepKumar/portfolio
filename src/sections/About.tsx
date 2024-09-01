@@ -1,6 +1,5 @@
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import StarIcon from "@/assets/icons/star.svg";
 import HTMLIcon from "@/assets/icons/html.svg";
 import CSSIcon from "@/assets/icons/css.svg";
 import JavaScriptIcon from "@/assets/icons/javascript.svg";
@@ -11,7 +10,8 @@ import NodeIcon from "@/assets/icons/node.svg";
 import ExpressIcon from "@/assets/icons/express.svg";
 import MongoDBIcon from "@/assets/icons/mongodb.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import TechIcon from "@/components/TechIcon";
+import PostgresIcon from "@/assets/icons/postgres.svg";
+
 import CardHeader from "@/components/CardHeader";
 import ToolBoxItems from "@/components/ToolBoxItems";
 
@@ -51,6 +51,10 @@ const toolboxItems = [
   {
     title: "Mongo DB",
     iconType: MongoDBIcon,
+  },
+  {
+    title: "PostgreSQL",
+    iconType: PostgresIcon
   },
   {
     title: "Github",
