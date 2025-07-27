@@ -1,24 +1,40 @@
-import NikeLandingPage from "@/assets/images/nikelandingpage.png";
+// Project images
 import NextJobs from "@/assets/images/nextjobs.png";
 import TweetSphere from "@/assets/images/tweetsphere.png";
 import FitFusion from "@/assets/images/fit-fusion-ai.png";
 import Flixify from "@/assets/images/flixify.png";
 import FeedbackWidget from "@/assets/images/feedback-widget.png";
 import ReactAdminDashboard from "@/assets/images/react-admin-dashboard.png";
+import TgibLinkNest from "@/assets/images/tgib-linknest.png";
+import cdms from "@/assets/images/cdms.jpg";
+
+// Tools images
+import HTMLIcon from "@/assets/icons/html.svg";
+import CSSIcon from "@/assets/icons/css.svg";
+import JavaScriptIcon from "@/assets/icons/javascript.svg";
+import ReactIcon from "@/assets/icons/react.svg";
+import NextIcon from "@/assets/icons/nextjs.svg";
+import TailwindIcon from "@/assets/icons/tailwind.svg";
+import NodeIcon from "@/assets/icons/node.svg";
+import ExpressIcon from "@/assets/icons/express.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
+import GithubIcon from "@/assets/icons/github.svg";
+import PostgresIcon from "@/assets/icons/postgres.svg";
+import PrismaIcon from "@/assets/icons/prisma-4.svg";
 
 export const portfolioProjects = [
-  {
-    company: "Personal Project",
-    year: "2024",
-    title: "Nike Landing Page",
-    achievements: [
-      { title: "Device Screen Responsive" },
-      { title: "Sleek and Modern UI" },
-      { title: "Smooth Animations" },
-    ],
-    link: "https://nike-landingpage-ah0k.onrender.com",
-    image: NikeLandingPage,
-  },
+  // {
+  //   company: "Personal Project",
+  //   year: "2024",
+  //   title: "Nike Landing Page",
+  //   achievements: [
+  //     { title: "Device Screen Responsive" },
+  //     { title: "Sleek and Modern UI" },
+  //     { title: "Smooth Animations" },
+  //   ],
+  //   link: "https://nike-landingpage-ah0k.onrender.com",
+  //   image: NikeLandingPage,
+  // },
   {
     company: "Personal Project",
     year: "2024",
@@ -90,6 +106,32 @@ export const portfolioProjects = [
     link: "https://react-admin-dashboard-fawn-theta.vercel.app/",
     image: ReactAdminDashboard,
   },
+  {
+    company: "AIPTEK", 
+    year: "2025",
+    title: "TGIB LinkNest", 
+    achievements: [
+      { title: "Backend to handle large file uploads"},
+      { title: "Secure role based authentication for students and lecturers"},
+      { title: "Efficient QR code generation and scanning"},
+    ],
+    link: "",
+    image: TgibLinkNest,
+  },
+  {
+    company: "AIPTEK",
+    year: "2025",
+    title: "CDMS", 
+    achievements: [
+      { title: "Scalable backend to handle large datasets" },
+      { title: "Secure role based authentication"},
+      { title: "Microservices architecture in backend"},
+      { title: "UID management for real time inventory updates"}, 
+      { title: "Clean data visualisation with dashboards"},
+    ], 
+    link: "",
+    image: cdms,
+  },
 ];
 
 export const words = [
@@ -104,4 +146,57 @@ export const words = [
   "Search Optimized",
   "Usable",
   "Reliable",
+  "Creative",
+  "Resilient"
+];
+
+export const toolboxItems = [
+  {
+    title: "HTML 5",
+    iconType: HTMLIcon,
+  },
+  {
+    title: "CSS 3",
+    iconType: CSSIcon,
+  },
+  {
+    title: "JavaScript",
+    iconType: JavaScriptIcon,
+  },
+  {
+    title: "React JS",
+    iconType: ReactIcon,
+  },
+  {
+    title: "Next JS",
+    iconType: NextIcon,
+  },
+  {
+    title: "Tailwind CSS",
+    iconType: TailwindIcon,
+  },
+  {
+    title: "Node JS",
+    iconType: NodeIcon,
+  },
+  {
+    title: "Express JS",
+    iconType: ExpressIcon,
+  },
+  {
+    title: "Mongo DB",
+    iconType: MongoDBIcon,
+  },
+  {
+    title: "PostgreSQL",
+    iconType: PostgresIcon
+  },
+  {
+    title: "Github",
+    iconType: GithubIcon,
+  },
+  {
+    title: "Prisma ORM", 
+    iconType: PrismaIcon
+  }
 ];

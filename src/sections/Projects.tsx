@@ -20,7 +20,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px)`
+                top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -30,23 +30,21 @@ export const ProjectsSection = () => {
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
-                    {project.title}
-                  </h3>
+                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">{project.title}</h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4">
                     {project.achievements.map((achievement) => (
-                      <li
-                        key={achievement.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50 w-full"
-                      >
+                      <li key={achievement.title} className="flex gap-2 text-sm md:text-base text-white/50 w-full">
                         <CheckCirleIcon className="size-5 md:size-6" />
                         <span>{achievement.title}</span>
                       </li>
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                    <button
+                      disabled={!project.link}
+                      className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                    >
                       <span>Visit Live Site</span>
                       <ArrowUpRight className="size-4" />
                     </button>
