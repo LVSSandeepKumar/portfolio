@@ -35,14 +35,7 @@ const Experience = () => {
                   contentArrowStyle={{
                     borderRight: `7px solid ${exp.color}40`,
                   }}
-                  date={
-                    <div className="flex items-center gap-2 text-white/60 font-semibold">
-                      <Calendar className="w-4 h-4" />
-                      <span>
-                        {exp.fromDate} - {exp.toDate}
-                      </span>
-                    </div>
-                  }
+                  date={`${exp.fromDate} - ${exp.toDate}`}
                   iconStyle={{
                     background: `linear-gradient(135deg, ${exp.color} 0%, ${exp.color}dd 100%)`,
                     color: "#fff",
@@ -73,6 +66,10 @@ const Experience = () => {
                         <p className="text-white/80 m-[0px]">{point}</p>
                       </div>
                     ))}
+                    <div className="flex items-center gap-2 text-white/60 font-semibold mt-6">
+                      <Calendar className="w-4 h-4" />
+                      <span>{exp.fromDate} - {exp.toDate}</span>
+                    </div>
                   </div>
                 </VerticalTimelineElement>
               ))}
