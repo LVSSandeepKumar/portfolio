@@ -107,13 +107,13 @@ export const portfolioProjects = [
     image: ReactAdminDashboard,
   },
   {
-    company: "AIPTEK", 
+    company: "AIPTEK",
     year: "2025",
-    title: "TGIB LinkNest", 
+    title: "TGIB LinkNest",
     achievements: [
-      { title: "Backend to handle large file uploads"},
-      { title: "Secure role based authentication for students and lecturers"},
-      { title: "Efficient QR code generation and scanning"},
+      { title: "Backend to handle large file uploads" },
+      { title: "Secure role based authentication for students and lecturers" },
+      { title: "Efficient QR code generation and scanning" },
     ],
     link: "",
     image: TgibLinkNest,
@@ -121,16 +121,60 @@ export const portfolioProjects = [
   {
     company: "AIPTEK",
     year: "2025",
-    title: "CDMS", 
+    title: "CDMS",
     achievements: [
       { title: "Scalable backend to handle large datasets" },
-      { title: "Secure role based authentication"},
-      { title: "Microservices architecture in backend"},
-      { title: "UID management for real time inventory updates"}, 
-      { title: "Clean data visualisation with dashboards"},
-    ], 
+      { title: "Secure role based authentication" },
+      { title: "Microservices architecture in backend" },
+      { title: "UID management for real time inventory updates" },
+      { title: "Clean data visualisation with dashboards" },
+    ],
     link: "",
     image: cdms,
+  },
+];
+
+export const experiences = [
+  {
+    company: "StepX Technologies",
+    role: "Junior Software Developer Intern",
+    location: "Hyderabad, India",
+    fromDate: "Dec 2024",
+    toDate: "Feb 2024",
+    points: [
+      "Learnt and did unit testing on existing node project using Jest",
+      "Learnt microservices architecture and re architectured existing application into microservices",
+      "Prepared basic react UIs for demo",
+    ],
+    color: "#667eea",
+  },
+  {
+    company: "StepX Technologies",
+    role: "Junior Software Developer",
+    location: "Hyderabad, India",
+    fromDate: "Feb 2024",
+    toDate: "Apr 2024",
+    points: [
+      "Designed the db for a cdms application",
+      "Implemented ETLs operations to read from pdfs, xlsx etc",
+      "Implemented paginations and filters in REST APIs",
+      "Integrated REST APIs with frontend",
+    ],
+    color: "#f093fb",
+  },
+  {
+    company: "AIPTEK",
+    role: "Junior Software Developer",
+    location: "Hyderabad, India",
+    fromDate: "Apr 2024",
+    toDate: "Present",
+    points: [
+      "Improved backend responses with microservices architecture",
+      "Implemented role based authentication",
+      "Implemented QR code generation and scanning",
+      "Implemented real time inventory updates",
+    ],
+    color: "#667eea",
   },
 ];
 
@@ -147,7 +191,7 @@ export const words = [
   "Usable",
   "Reliable",
   "Creative",
-  "Resilient"
+  "Resilient",
 ];
 
 export const toolboxItems = [
@@ -189,14 +233,14 @@ export const toolboxItems = [
   },
   {
     title: "PostgreSQL",
-    iconType: PostgresIcon
+    iconType: PostgresIcon,
   },
   {
     title: "Github",
     iconType: GithubIcon,
   },
   {
-    title: "Prisma ORM", 
-    iconType: PrismaIcon
-  }
+    title: "Prisma ORM",
+    iconType: PrismaIcon,
+  },
 ];

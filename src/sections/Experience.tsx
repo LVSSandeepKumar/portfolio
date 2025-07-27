@@ -5,23 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
-
-const experiences = [
-  {
-    company: "Tech Innovations Inc.",
-    role: "Senior Full Stack Developer",
-    location: "San Francisco, CA",
-    fromDate: "Jan 2022",
-    toDate: "Present",
-    points: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored 5 junior developers and conducted technical interviews",
-      "Built real-time analytics dashboard using React and Node.js"
-    ],
-    color: "#667eea"
-  },
-];
+import { experiences } from "@/constants";
 
 const Experience = () => {
   return (
@@ -44,8 +28,9 @@ const Experience = () => {
                     color: "#fff",
                     border: `2px solid ${exp.color}40`,
                     borderRadius: "1.25rem",
-                    padding: "2rem",
+                    padding: "1.5rem",
                     boxShadow: "0 4px 24px 0 rgba(0,0,0,0.15)",
+                    // display: "block",
                   }}
                   contentArrowStyle={{
                     borderRight: `7px solid ${exp.color}40`,
@@ -53,24 +38,22 @@ const Experience = () => {
                   date={
                     <div className="flex items-center gap-2 text-white/60 font-semibold">
                       <Calendar className="w-4 h-4" />
-                      <span>{exp.fromDate} - {exp.toDate}</span>
+                      <span>
+                        {exp.fromDate} - {exp.toDate}
+                      </span>
                     </div>
                   }
                   iconStyle={{
                     background: `linear-gradient(135deg, ${exp.color} 0%, ${exp.color}dd 100%)`,
                     color: "#fff",
-                    boxShadow: `0 0 0 4px ${exp.color}20, 0 8px 17px rgba(0,0,0,.2)`
+                    boxShadow: `0 0 0 4px ${exp.color}20, 0 8px 17px rgba(0,0,0,.2)`,
                   }}
                   icon={<Briefcase />}
                 >
                   <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-white mb-2 font-serif">
-                      {exp.company}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-white mb-2 font-serif">{exp.company}</h3>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                      <h4 className="text-lg font-semibold text-emerald-300">
-                        {exp.role}
-                      </h4>
+                      <h4 className="text-lg font-semibold text-emerald-300">{exp.role}</h4>
                       <div className="flex items-center text-white/40 text-sm">
                         <MapPin className="w-4 h-4 mr-1" />
                         {exp.location}
@@ -82,12 +65,12 @@ const Experience = () => {
                       Key Achievements
                     </h5>
                     {exp.points.map((point, pointIndex) => (
-                      <div key={pointIndex} className="flex items-start gap-3">
+                      <div key={pointIndex} className="flex items-center gap-3">
                         <div
-                          className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                          className="w-2 h-2 rounded-full flex-shrink-0"
                           style={{ backgroundColor: exp.color }}
                         ></div>
-                        <p className="text-white/80 leading-relaxed text-sm md:text-base">{point}</p>
+                        <p className="text-white/80 m-[0px]">{point}</p>
                       </div>
                     ))}
                   </div>
@@ -113,9 +96,21 @@ const Experience = () => {
               }
               .vertical-timeline-element-content {
                 background: #18181b !important;
+                color: #fff !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+              }
+              .vertical-timeline-element-content.is-hidden {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+              }
+              .vertical-timeline-element-content p {
+                margin: 0 !important;
               }
               .vertical-timeline-element--work .vertical-timeline-element-icon {
-                box-shadow: 0 0 0 4px #4facfe20, 0 8px 17px rgba(0,0,0,.2) !important;
+                box-shadow: 0 0 0 4px #4facfe20, 0 8px 17px rgba(0, 0, 0, 0.2) !important;
               }
             `}</style>
           </div>
