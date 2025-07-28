@@ -140,7 +140,7 @@ export const experiences = [
     role: "Junior Software Developer Intern",
     location: "Hyderabad, India",
     fromDate: "Dec 2024",
-    toDate: "Feb 2024",
+    toDate: "Feb 2025",
     points: [
       "Learnt and did unit testing on existing node project using Jest",
       "Learnt microservices architecture and re architectured existing application into microservices",
@@ -152,8 +152,8 @@ export const experiences = [
     company: "StepX Technologies",
     role: "Junior Software Developer",
     location: "Hyderabad, India",
-    fromDate: "Feb 2024",
-    toDate: "Apr 2024",
+    fromDate: "Feb 2025",
+    toDate: "Apr 2025",
     points: [
       "Designed the db for a cdms application",
       "Implemented ETLs operations to read from pdfs, xlsx etc",
@@ -166,7 +166,7 @@ export const experiences = [
     company: "AIPTEK",
     role: "Junior Software Developer",
     location: "Hyderabad, India",
-    fromDate: "Apr 2024",
+    fromDate: "Apr 2025",
     toDate: "Present",
     points: [
       "Improved backend responses with microservices architecture",
