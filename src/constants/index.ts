@@ -7,6 +7,7 @@ import FeedbackWidget from "@/assets/images/feedback-widget.png";
 import ReactAdminDashboard from "@/assets/images/react-admin-dashboard.png";
 import TgibLinkNest from "@/assets/images/tgib-linknest.png";
 import cdms from "@/assets/images/cdms.jpg";
+import NeeomDesigns from "@/assets/images/neeomdesigns.png";
 
 // Tools images
 import HTMLIcon from "@/assets/icons/html.svg";
@@ -132,6 +133,19 @@ export const portfolioProjects = [
     link: "",
     image: cdms,
   },
+  {
+    company: "Freelance Project (SVR)", 
+    year: "2025",
+    title: "Neeom Designs", 
+    achievements: [
+      { title: "E-commerce website for interior design" },
+      { title: "Secure role based authentication" },
+      { title: "Large Image upload handling"}, 
+      { title: "Image optimization and faster load times"}
+      ],
+      link: "https://www.neeomdesigns.com/",
+      image: NeeomDesigns,
+  }
 ];
 
 export const experiences = [
